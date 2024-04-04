@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <title>Woonplaats Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+h3 {
+    COLOR: #2E5538;
+}
+
+header {
+    background-image: url('Header-Les18.jpg');
+    font-family: "Open Sans", sans-serif;
+    height: 400px;
+    text-align: center;
+    color: black;
+    padding-top: 25px;
+    background-size: cover;
+    background-position-y:bottom;
+    font-size: 18px;
+}
+    
+.img {
+    height: 150px;
+    width: 150px;
+    padding: 0% 0% 1% 1%;
+    border-radius: 4px;
+    float: right;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%; padding: 0% 1% 0% 1%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%; padding: 0% 1% 0% 1%; margin: 3px; background-color: whitesmoke;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.container {
+    display: inline-block;
+    flex-wrap:wrap;
+    margin: 1% 0% 1% 0%;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #2E5538;
+    color: white;
+    font-size: 18px;
+}
+
+@media (min-width: 600px) {
+    .container {
+    display: flex;
+    }
+    .col-2, .col-10 {
+    flex: 1;
+}
+    header {
+        color: #2E5538;
+        font-size: 28px;
+    }
+}
+
+</style>
+</head>
+<body>
+<header>
+    <h1>ZAANSTAD</h1>
+</header>
+
+<div class="container">
+<section class="col-2">
+<h3>Feitjes over Zaanstad</h3>
+<ul>
+    <li>Zaans groen</li>
+    <li>Molens</li>
+    <li>Dialect</li>
+    <li>Klompen</li>
+    <li>Groene huizen</li>
+</ul>
+</section>
+<section class="col-9">
+    <div>
+        <img class="img" src="Molen.jpg" alt="Molen">
+        <h3>Zaanse molens</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis commodo congue justo a pellentesque. Maecenas quis turpis nisi. 
+        Proin porta, turpis eget maximus placerat, ipsum diam ultrices erat, ac accumsan ante odio eu neque. 
+        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nulla fermentum urna id velit 
+        varius sollicitudin. Phasellus tincidunt laoreet urna, non tempus justo consectetur non. Nullam eu gravida enim. 
+        Aliquam viverra sodales dignissim. Donec vehicula urna a arcu scelerisque aliquam feugiat ut nisl. Aliquam egestas, nisi at cursus 
+        interdum, odio diam facilisis lectus, quis mollis tortor est non magna.</p>
+        
+        </div>
+<br>
+    <div>
+        <img class="img" src="Zaans-huis.jpg" alt="Zaans-huisje">
+        <h3>Zaanse huisjes</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis commodo congue justo a pellentesque. Maecenas quis turpis nisi. 
+        Proin porta, turpis eget maximus placerat, ipsum diam ultrices erat, ac accumsan ante odio eu neque. 
+        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nulla fermentum urna id velit 
+        varius sollicitudin. Phasellus tincidunt laoreet urna, non tempus justo consectetur non. Nullam eu gravida enim. 
+        Aliquam viverra sodales dignissim. Donec vehicula urna a arcu scelerisque aliquam feugiat ut nisl. Aliquam egestas, nisi at cursus 
+        interdum, odio diam facilisis lectus, quis mollis tortor est non magna.</p>
+    </div>
+</section>
+</div>
+<footer>
+    <p>&copy; 2024 Patricia Kuipers-Winters</p>
+</footer>
+</body>
+</html>
